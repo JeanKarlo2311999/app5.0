@@ -1,0 +1,339 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion 5</title>
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+<!--------------------------------------->
+
+    
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/tierra2.png','imagenes/tierra4.jpg','imagenes/tierra7.jpg','imagenes/tierra9.jpg','imagenes/tierra11.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>Dia Internacional de la Tierra</h1>
+    </div>
+	<!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="visor/data1/images/tierra1.png" alt="tierra1" title="tierra1" id="wows1_0"/></li>
+<li><img src="visor/data1/images/tierra2.png" alt="tierra2" title="tierra2" id="wows1_1"/></li>
+<li><img src="visor/data1/images/tierra3.jpg" alt="tierra3" title="tierra3" id="wows1_2"/></li>
+<li><img src="visor/data1/images/tierra4.jpg" alt="tierra4" title="tierra4" id="wows1_3"/></li>
+<li><img src="visor/data1/images/tierra5.png" alt="tierra5" title="tierra5" id="wows1_4"/></li>
+<li><img src="visor/data1/images/tierra6.png" alt="tierra6" title="tierra6" id="wows1_5"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="tierra1"><img src="visor/data1/tooltips/tierra1.png" alt="tierra1"/>1</a>
+<a href="#" title="tierra2"><img src="visor/data1/tooltips/tierra2.png" alt="tierra2"/>2</a>
+<a href="#" title="tierra3"><img src="visor/data1/tooltips/tierra3.jpg" alt="tierra3"/>3</a>
+<a href="#" title="tierra4"><img src="visor/data1/tooltips/tierra4.jpg" alt="tierra4"/>4</a>
+<a href="#" title="tierra5"><img src="visor/data1/tooltips/tierra5.png" alt="tierra5"/>5</a>
+<a href="#" title="tierra6"><img src="visor/data1/tooltips/tierra6.png" alt="tierra6"/>6</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Gallery App</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="visor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="visor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+<div>
+	<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    	<h2>¿Fecha en que se festeja?</h2>
+    	<p>Se muestra información sobre el Dia Internacional de la Tierra</p>
+    	</a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Cual es la importancia de su cuidado?</h2>
+        <p>Se muestra información sobre el Dia Internacional de la Tierra</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Acciones para evitar la contaminacion</h2>
+        <p>Se muestra información sobre el Dia Internacional de la Tierra</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Porque se celebra</h2>
+        <p>Se muestra información sobre el Dia Internacional de la Tierra</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Cambio Climatico</h2>
+        <p>Se muestra información sobre el Dia Internacional de la Tierra</p>
+        </a>
+    </li>
+        <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>3 R</h2>
+        <p>Se muestra información sobre el Dia Internacional de la Tierra</p>
+        </a>
+    </li>
+          <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Reflexion</h2>
+        <p>Se muestra tu opinion</p>
+        </a>
+    </li>
+    </ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a">
+	<div>
+    <img src="imagenes/mdpi.png" width="80" height="56">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4>Jean Karlo Jimenez Contreras</h4>
+    </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿Fecha en que se celebra?</h1>
+  </div>
+   <div data-role="content" align="center">
+   <div>
+   <h2>Día Internacional de la Madre Tierra
+22 de abril</h2>
+   <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/tierra2.png',1)"><img src="imagenes/tierra1.png" width="500" height="307" id="Image28"></a></p>
+   <p><a href="http://elblogverde.com/dia-de-la-tierra-como-celebrarlo/">visita la pagina </a></p>
+   </div>
+   </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56">
+    </div>
+   <h4> Aplicacion Cinco,JKJC</h4>
+   </div>
+</div>
+   </div>
+   
+   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>¿Importancia de Cuidarla?</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <p>El planeta Tierra es nuestro mundo, es nuestro hogar es la cuna el hábitat de miles y miles de formas de vidas y maravillas únicas en el universo y debemos aprender a cuidarlo y quererlo
+
+Como es necesario, ya que de la misma forma que nos preocupamos por mejorar y mantener bien nuestro propio hogar lo mismo debemos hacer con nuestro planeta; para de esta forma vivir mejor.</p>
+   <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/tierra4.jpg',1)"><img src="imagenes/tierra3.jpg" width="480" height="360" id="Image27"></a></p>
+   </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56">
+   </div>
+   <h4> Aplicacion Cinco, JKJC</h4>
+   </div>
+   </div>
+   </div>
+   
+   <div data-role="page" id="Pagina3" data-add-back-btn="true" data-back-btn-text="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Acciones para evitar la Contaminacion</h1>
+   </div>
+   <div data-role="content" align="center">
+    <p>Si cada uno de nosotros contribuye en el cuidado y protección del ambiente podemos salvar el planeta.A continuación veremos algunos consejos útiles para proteger nuestro planeta.</p>
+    <p><img src="imagenes/tierra5.png" width="225" height="225"></p>
+  <p>
+*Afinar y dar mantenimiento a los automóviles</p>
+  <p> *Evitar la quema de basura y llantas, así como el uso de cohetes artificiales</p>
+  <p> *Evitar comprar artículos desechables y plásticos que no son biodegradables.    </p>
+  <p>*Reciclar la basura </p>
+  <p>*No arrojar basura en la calle, bosques y parques, envolverla o taparla bien en la casa    </p>
+  <p>*Usar racionalmente los plaguicidas</p>
+  <p> *Evitar el consumo de tabaco    </p>
+  <p>*Cuidar los bosques, no provocar incendios ni destruir las zonas verdes de la ciudad</p>
+  <p> *Posponer las tareas de jardinería que requieran el uso de herramientas a gasolina en días de alto nivel de de ozono</p>
+  <p> *Consume alimentos orgánicos o al menos aquellos no hayan sido sometidos a un uso tan intensivo de agroquímicos. (puedes cultivarlos en tú azotea con composta hecha por ti mismo)
+    Restringir la limpieza en seco. </p>
+  <p>*Evita el uso de pinturas, aceites y solventes en días de alta concentración de ozono. </p>
+  <p>*Reduce el consumo de electricidad, lo cual contribuirá a disminuir las emanaciones de contaminantes y partículas.    </p>
+  <p>*Prende el carbón de leña con un encendedor eléctrico en vez de hacerlo con combustible líquido.</p>
+  <p> *Aplica el poder de las 3 Erres: Reduce-Reutiliza-Recicla. Un menor consumo redundará en menor contaminación atmosférica de todo tipo.</p>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/tierra7.jpg',1)"><img src="imagenes/tierra6.png" width="400" height="370" id="Image2"></a></p>
+  
+   </div>
+   <div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56"></div>
+   <h4>Aplicacion Cinco, JKJC</h4>
+   </div>
+   </div>
+</div>
+   
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>¿Porque se Celebra?</h1>
+   </div>
+   <div data-role="content" align="center">
+   <p>El 22 de abril se celebra el Día Mundial de la Tierra. Esta fecha fue elegida porque el 22 de abril de 1970 una manifestación en Estados Unidos para que se creara en el Gobierno una agencia ambiental que trabaje sobre las problemáticas medioambientales.
+
+El impulsor de la protesta fue el senador y activista ambiental Gaylord Nelson, quien convocó a miles de universidades, escuelas primarias y secundarias entre otras comunidades a participar del pedido. Gracias a la expresión social el Ejecutivo estadounidense creó Environmental Protection Agency (Agencia de Protección Ambiental) y varias leyes de protección del medio ambiente.
+
+Dos años después se llevó adelante el encuentro a nivel mundial: Cumbre de la Tierra de Estocolmo.
+
+La intensión es sensibilizar a la humanidad de que es parte del planeta Tierra y sus huellas marcarán el destino del mundo, por eso reducir (el consumo), reciclar y reutilizar objetos es la forma en que cada uno día a día puede colaborar para evitar la contaminación ambiental.</p>
+ <div data-role="main" class="ui-content">
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>Ciudades verdes</h1>
+          <div>
+          </div>
+          <p>Las Naciones Unidas proponen generar "Ciudades Verdes": "El objetivo del Día de la Tierra es movilizar a millones de personas para lograr un medio ambiente saludable y sostenible. En la actualidad, más de la mitad de la población mundial vive en las ciudades. A medida que la población urbana crece y los efectos del cambio climático empeoran, nuestras ciudades deben evolucionar. 
+Es hora de que invirtamos en energías renovables y en eficiencia energética, reconstruyamos nuestras ciudades y empecemos a resolver el problema del cambio climático".</p>
+
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','imagenes/tierra9.jpg',1)"><img src="imagenes/tierra8.jpg" width=50% height=50% id="Image29"></a>
+          </div>
+     </div>
+     </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+    <h4><img src="imagenes/mdpi.png" width="80" height="56"></h4>
+   <h4>Aplicación Cinco, JKJC</h4>
+   </div>
+   </div>
+ </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Cambio Climatico</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+<p>El cambio climático es definido como un cambio estable y durable en la distribución de los patrones de clima en periodos de tiempo que van desde décadas hasta millones de años. Pudiera ser un cambio en las condiciones climáticas promedio o la distribución de eventos en torno a ese promedio (por ejemplo más o menos eventos climáticos extremos). El cambio climático puede estar limitado a una región específica, como puede abarcar toda la superficie terrestre.
+
+El término, a veces se refiere específicamente al cambio climático causado por la actividad humana, a diferencia de aquellos causados por procesos naturales de la Tierra y el Sistema Solar. En este sentido, especialmente en el contexto de la política ambiental, el término “cambio climático” ha llegado a ser sinónimo de “calentamiento global antropogénico“, o sea un aumento de las temperaturas por acción de los humanos.
+</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','imagenes/tierra11.jpg',1)"><img src="imagenes/tierra10.jpg" width="340" height="250" id="Image31"></a></p>
+</div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56">
+   <h4>Aplicacion Cinco, JKJC</h4>
+   </div>
+</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Las 3 R</h1>
+   </div>
+<div data-role="content" align="center">
+   </div>
+    <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+         <h1>Reduce</h1>
+          <div>
+          <p>"Reduce la basura que produces"
+Reduce los papeles y envoltorios que te dan al hacer una compra por ejemplo: los papeles de tortillas.
+Reduce el uso, de productos tóxicos y contaminantes.
+Cuando compres lleva una bolsa de tu casa.</p>
+          <p><center>
+            <img src="imagenes/tierra12.jpg" width=50% height=50%>
+          </center></p>
+         </div>
+          </div>
+<div data-role="main" class="ui-content">
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>Recicla</h1>
+          <div>
+          <p>"Recicla la basura que produces"
+Al comprar algún producto en particular siempre debemos fijarnos que sea un envase reciclable.
+Reciclar es tratar de hacer basura que con ella se pueda fabricar otras cosas por ejemplo: una botella podría reciclarse para convertirla en un fantástico vaso, un cuaderno en un bonito libro o un periódico, una bolsa de plástico en un banco de jardín etc.
+Unos ejemplos de basura que se pueden reciclar son: Papel, Cartón, Vidrio, Hojalata, Aluminio, Plomo, Zinc, Plásticos.</p>
+          </div>
+       <div><center>	
+         <img src="imagenes/tierra13.jpg" width="331" height="300"></center> </div>
+         </div>
+         </div>
+<div data-role="main" class="ui-content">
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>Reutiliza</h1>
+          <div>
+          <p>"Reutiliza los envases u otras cosas que uses"
+No debes de tirar a la basura todo aquello que puede ser usado otra vez ya que cuantos más cosas reutilicemos, menos basura produciremos. Algunos consejos que se dan son:
+*Compra refrescos en botellas retornables.
+*Utiliza el papel por las dos caras.
+*Regala la ropa que te quede pequeña o que ya no usas.</p>
+          </div>
+       <div><center>	
+         <img src="imagenes/tierra14.jpg" width="432" height="355"></center> </div>
+         </div>
+         </div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56">   
+   <h4>Aplicacion Cinco, JKJC</h4>
+   </div>
+   </div>
+   </div>
+  </div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Reflexion</h1>
+   </div>
+   <div data-role="content" align="center">
+   <p> La unica reflexion que yo puedo dar es que, no porque un congreso diga que es hoy es el dia de la tierra, es el unico dia en el cual nos preocupemos por ella pues si no mal recuerdo no solo un dia respiramos, no solo un dia nos dia comemos lo que sembramos en sun cuerpo, pues todos los dias gosamos de ella y de todo lo que nos otorga, por lo cual no hay que cuidarla solo un dia del año sino todos los dias de nuestra vida pues sin ella no conoceriamos o no tendriamos vida, hay que emplear los conocimientos que la vida y la educacion nos otorga, para poder salvar y cuidar nuestra tierra, la unica que conocemos y la unica que nos otorga nuestra vida.  </p>
+   </div>
+   <div>
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/1wowindex.html" style="width:500px;height:180px;max-width:500px;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+      <img src="imagenes/mdpi.png" width="80" height="56">
+   <h4>Aplicacion Cinco, JKJC</h4>
+   </div>
+  </div>
+  </div>
+</body>
+</html>
